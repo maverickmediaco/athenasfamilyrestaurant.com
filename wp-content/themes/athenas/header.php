@@ -48,28 +48,46 @@
 <body <?php body_class(); ?>>
 
 	<div id="container">
+    
+    <div id="tel-bar" class="container-fluid">
+    	<div class="row-fluid">
+        	<div class="col-md-7"></div>
+            <div id="order-now"class="col-md-2"><p>Order Now!</p></div>
+            <div id="tel-no"class="col-md-2"><p>(716) 692-2626</p></div>
+             <div id="tel" class="col-md-1"><span class="glyphicon glyphicon-earphone"></span></div>
+            
+		</div>
+    </div>
+			<header id="masthead" class="header" role="banner">
+            <div class="container-fluid">
+    				<div class="row-fluid">
 
-		<header id="masthead" class="header" role="banner">
-
-			<div id="inner-header" class="wrap clearfix">
-
-				<?php // to use a image just replace the bloginfo('name') with <img> ?>
-				<div id="logo" class="h1"><a href="<?php  echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></div>
-
-				<?php // if you'd like to use the site description you can un-comment it below
+				<div id="inner-header" class="wrap clearfix">
+                 
+                   	 	<div class="col-md-5">	
+							<?php // to use a image just replace the bloginfo('name') with <img> ?>
+							<div id="logo" class="h1"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/logo.png"></a>
+                            <?php // if you'd like to use the site description you can un-comment it below
 				// echo '<p class="site-description">'. bloginfo( "description" ) .'</p>' ?>
-
-			</div>
-
-		</header>
-
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'test' ); ?></a>
+                            </div>
+                		</div> 
+                        <div class="col-md-7">
+					
+                
+                <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'test' ); ?></a>
 
 		<nav id="main-navigation" class="clearfix" role="navigation">
 
 			<?php scaffolding_main_nav(); ?>
 
 		</nav>
+						</div>
+                     </div>
+                  </div>
+</header>
+
+		
+		
 
 		<?php // Interior Header Image ?>
         <div class="banner-wrap">

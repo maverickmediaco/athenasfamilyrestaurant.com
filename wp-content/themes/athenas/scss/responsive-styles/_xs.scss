@@ -24,6 +24,66 @@ CONTENTS:
 */
 
 /*********************
+Fonts
+*********************/
+
+@font-face {
+    font-family: 'avantgarde_bk_btbook';
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/AvantGarde_Bk_BT/avgardn-webfont.eot');
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/AvantGarde_Bk_BT/avgardn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/AvantGarde_Bk_BT/avgardn-webfont.woff') format('woff'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/AvantGarde_Bk_BT/avgardn-webfont.ttf') format('truetype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/AvantGarde_Bk_BT/avgardn-webfont.svg#avantgarde_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'benguiat_bk_btbook';
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Benguiat_Bk_BT/benguian-webfont.eot');
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Benguiat_Bk_BT/benguian-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Benguiat_Bk_BT/benguian-webfont.woff') format('woff'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Benguiat_Bk_BT/benguian-webfont.ttf') format('truetype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Benguiat_Bk_BT/benguian-webfont.svg#benguiat_bk_btbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blanchcaps';
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/blanch/blanch_caps-webfont.eot');
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/blanch/blanch_caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/blanch/blanch_caps-webfont.woff') format('woff'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/blanch/blanch_caps-webfont.ttf') format('truetype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/blanch/blanch_caps-webfont.svg#blanchcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'formal436_btregular';
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Formal_436_BT/frml436n-webfont.eot');
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Formal_436_BT/frml436n-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Formal_436_BT/frml436n-webfont.woff') format('woff'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Formal_436_BT/frml436n-webfont.ttf') format('truetype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Formal_436_BT/frml436n-webfont.svg#formal436_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gando_btregular';
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.eot');
+    src: url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.woff2') format('woff2'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.woff') format('woff'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.ttf') format('truetype'),
+         url('/athenasfamilyrestaurant.com/wp-content/themes/athenas/fonts/Gando_BT_Regular/gandon-webfont.svg#gando_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*********************
 GENERAL STYLES
 *********************/
 html {

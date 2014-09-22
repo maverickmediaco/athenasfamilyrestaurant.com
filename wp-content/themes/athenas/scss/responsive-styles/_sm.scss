@@ -12,6 +12,40 @@ come into play. Have fun!
 
 ******************************************************************/
 
+body {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+}
+
+
+#masthead {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/banner_tile.jpg) repeat;
+	max-height:105px;
+}
+
+#main-navigation {
+	background:none;
+	
+}
+
+#main-navigation ul.menu {
+	background:none;
+	margin-top:2.5em;
+	padding-bottom:0.5em;
+	border-bottom:solid 2px #0d3975;
+	
+}
+ 
+#main-navigation ul.menu li a {
+	color:#0d3874;
+	font-size:18px;
+}
+
+
+
 
 /*********************
 STICKY FOOTER STYLES

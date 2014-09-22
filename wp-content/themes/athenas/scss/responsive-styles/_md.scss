@@ -8,10 +8,32 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-#wpadminbar{
-	background:#C00;
+
+
+#tel-bar {
+	background:#0d3874;
+	max-height:35px;
+	
 }
 
-#masthead {
-	background:#dddddd;
+#order-now {
+	color:#fff;
+	font-family: 'avantgarde_bk_btbook';
+	font-size:18px;
+	max-height:35px;
+	padding-top:5px;
+	text-align:right;
+}
+
+#tel-no {
+	background:#6e94c8;
+	color:#fff;
+	max-height:35px;
+	font-size:22px;
+}
+
+#tel {
+	color:#fff;
+	font-size:22px;
+	padding-top:2px;
 }
