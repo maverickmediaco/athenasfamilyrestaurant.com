@@ -33,15 +33,17 @@ body {
 
 #main-navigation ul.menu {
 	background:none;
+	line-height:1;
 	margin-top:2.5em;
-	padding-bottom:0.5em;
+	padding-bottom:0.1em;
 	border-bottom:solid 2px #0d3975;
 	
 }
  
 #main-navigation ul.menu li a {
 	color:#0d3874;
-	font-size:18px;
+	font-size:36px;
+	font-family: 'blanchcaps';
 }
 
 
