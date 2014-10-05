@@ -112,8 +112,14 @@ MEALS
 	margin-top:130px;
 	text-align:center;
 	width:65%;  
-    transform: skew(-20deg); 
-    -webkit-transform: skew(-20deg);
+    transform: skew(-30deg); 
+    -webkit-transform: skew(-30deg);
+}
+
+.circle_title:hover {
+	background:#0D3874;
+	border:solid 4px #fff;
+	color:#fff;
 }
 
 #circles_bg {
@@ -126,10 +132,9 @@ MEALS
 	text-align:center;
 	width:90%;
 	height:130px;  
-    transform: skew(-20deg); 
-    -webkit-transform: skew(-20deg);
+    transform: skew(-37deg); 
+    -webkit-transform: skew(-37deg);
 }
-
 
 #greek_border {
 	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_border.jpg) repeat-x;
@@ -137,6 +142,37 @@ MEALS
 	
 }
 
+/*********************
+SECTION 2
+*********************/
+
+#section2 {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/section2_bg_tile.jpg) repeat;
+	color:#fff;
+	padding:20px;
+}
+
+#section2 h1 {
+	color:#fff;
+	font-family: 'benguiat_bk_btbook';
+	font-size:30px;
+}
+
+#section2 h2 {
+	color:#fff;
+	font-family: 'gando_btregular';
+	font-size:28px;
+}
+
+#section2 P {
+	color:#fff;
+	font-family: 'benguiat_bk_btbook';
+	font-size:14px
+}
+
+#welcome {
+	padding-top:30px;
+}
 
 /*********************
 STICKY FOOTER STYLES

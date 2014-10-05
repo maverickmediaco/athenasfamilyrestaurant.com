@@ -156,6 +156,18 @@
  
         </div><!--End Meals -->
         <div id="greek_border"></div>
+      
+          <div id="section2" class="row">
+        	<div class="col-md-4"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/fish_fry.png" alt="breakfast">
+            </div>
+            <div id="welcome" class="col-md-8"><h1>Welcome to Athena's Family Restaurant!</h1>
+        <p>Paul Kouvoutsakis, owner of Athena's Family Restaurant, has been in the restaurant business for more than 3o years. 
+Athena's is a family-owned and operated busness located in the heart of Tonawanda, NY.
+We offer homemade food, quick service and a friendly atmosphere. Try our delicious breakfast, lunch and dinner menus and daily specials.We also offer take out service of our authentic Greek and American cuisine.</p>
+<h2>Kali sas Orexi!</h2>
+			</div>
+          
+		</div>
         
         <?php } ?><!-- End Homepage -->
 
