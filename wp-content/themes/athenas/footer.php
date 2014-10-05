@@ -41,7 +41,6 @@
         <a href="#top"><i class="fa fa-angle-up"></i></a>
     </p>
 
-</div><?php //END #container ?>
 
 <?php wp_footer(); ?>
 

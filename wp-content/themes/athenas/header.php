@@ -8,8 +8,7 @@
 <!--[if lt IE 7]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html <?php language_attributes(); ?> class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
-<head>
+<!--[if gt IE 8]><!--> <html <?php language_attributes(); ?> class="no-js"><!--<![endif]--><head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <title><?php wp_title(''); ?></title>
 <meta name="HandheldFriendly" content="True">
@@ -33,30 +32,34 @@
 
 <?php wp_head(); ?>
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.eot">
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.svg">
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.ttf">
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/fonts/glyphicons-halflings-regular.woff">
+<link rel="stylesheet" href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/bootstrap-3.2.0-dist/js/bootstrap.min.js">
 
+
+
+<link href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/css/ihover.css" rel="stylesheet">
 
 </head>
 
 <body <?php body_class(); ?>>
 
-	<div id="container">
+
     
-    <div id="tel-bar" class="container-fluid">
-    	<div class="row-fluid">
-        	<div class="col-md-7"></div>
-            <div id="order-now"class="col-md-2"><p>Order Now!</p></div>
-            <div id="tel-no"class="col-md-2"><p>(716) 692-2626</p></div>
-             <div id="tel" class="col-md-1"><span class="glyphicon glyphicon-earphone"></span></div>
-            
-		</div>
+    <div id="tel-bar">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-md-7"></div>
+                <div id="order-now"class="col-md-2"><p>Order Now!</p></div>
+                <div id="tel-no"class="col-md-2"><p>(716) 692-2626</p></div>
+                <div id="tel" class="col-md-1"><span class="glyphicon glyphicon-earphone"></span></div>
+            </div>
+         </div>   
     </div>
 			<header id="masthead" class="header" role="banner">
             <div class="container-fluid">
@@ -88,13 +91,69 @@
 
 		
 		
-
 		<?php // Interior Header Image ?>
         <div class="banner-wrap">
             <div id="banner">
+            
                 <div class="spacer"></div>
             </div>
         </div>
+        
+        <div id="meals">
+        	<!-- From left and right -->
+            
+<div id="meal_circles" class="row">
+			  <div class="col-sm-2"></div>
+              <div id="circle_breakfast" class="col-sm-3">
+                <!-- colored -->
+                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
+                    <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
+                    <div class="info">
+                      <div class="info-back">
+                        <h3>Breakfast</h3>
+                        <p>Description goes here</p>
+                      </div>
+                    </div></a></div>
+                <!-- end colored -->
+             
+              </div>
+              
+                     <div id="circle_lunch" class="col-sm-3">
+                <!-- colored -->
+                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
+                    <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
+                    <div class="info">
+                      <div class="info-back">
+                        <h3>Breakfast</h3>
+                        <p>Description goes here</p>
+                      </div>
+                    </div></a></div>
+                <!-- end colored -->
+             
+              </div>
+              
+                     <div id="circle_dinner" class="col-sm-3">
+                <!-- colored -->
+                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
+                    <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/dinner_circle.png" alt="breakfast"></div>
+                    <div class="info">
+                      <div class="info-back">
+                        <h3>Breakfast</h3>
+                        <p>Description goes here</p>
+                      </div>
+                    </div></a></div>
+                <!-- end colored -->
+             
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+            <!-- end From left and right -->
+             
+             
+           
+        
+        
+        </div><!--End Meals--!>
 
 		<div id="content">
 

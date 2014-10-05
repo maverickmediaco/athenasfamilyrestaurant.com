@@ -2463,7 +2463,7 @@ Here you can begin to add more resource-intensive styles.
     display: block;
     border-bottom: 2px dotted #fff;
     border-left: none;
-    padding: 10px;
+    padding: 5px;
   }
   /* line 263, ../scss/includes/_offcanvas-nav.scss */
   #main-navigation ul.menu li ul.sub-menu li ul.sub-menu,
@@ -5505,18 +5505,21 @@ Here you can begin to add more resource-intensive styles.
     background-size: cover;
   }
 
-  /* line 24, ../scss/responsive-styles/_sm.scss */
+  /*********************
+  HEADER
+  *********************/
+  /* line 28, ../scss/responsive-styles/_sm.scss */
   #masthead {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/banner_tile.jpg) repeat;
     max-height: 105px;
   }
 
-  /* line 29, ../scss/responsive-styles/_sm.scss */
+  /* line 33, ../scss/responsive-styles/_sm.scss */
   #main-navigation {
     background: none;
   }
 
-  /* line 34, ../scss/responsive-styles/_sm.scss */
+  /* line 38, ../scss/responsive-styles/_sm.scss */
   #main-navigation ul.menu {
     background: none;
     line-height: 1;
@@ -5525,29 +5528,76 @@ Here you can begin to add more resource-intensive styles.
     border-bottom: solid 2px #0d3975;
   }
 
-  /* line 43, ../scss/responsive-styles/_sm.scss */
+  /* line 47, ../scss/responsive-styles/_sm.scss */
   #main-navigation ul.menu li a {
     color: #0d3874;
     font-size: 36px;
     font-family: 'blanchcaps';
   }
 
+  /* line 54, ../scss/responsive-styles/_sm.scss */
+  #tel-bar {
+    background: #0d3874;
+    max-height: 35px;
+  }
+
+  /* line 60, ../scss/responsive-styles/_sm.scss */
+  #order-now {
+    color: #fff;
+    font-family: 'avantgarde_bk_btbook';
+    font-size: 18px;
+    max-height: 35px;
+    padding-top: 5px;
+    text-align: right;
+  }
+
+  /* line 69, ../scss/responsive-styles/_sm.scss */
+  #tel-no {
+    background: #6e94c8;
+    color: #fff;
+    max-height: 35px;
+    font-size: 22px;
+  }
+
+  /* line 76, ../scss/responsive-styles/_sm.scss */
+  #tel {
+    color: #fff;
+    font-size: 22px;
+    padding-top: 2px;
+  }
+
+  /*********************
+  MEALS
+  *********************/
+  /* line 87, ../scss/responsive-styles/_sm.scss */
+  #meals {
+    background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
+    border-top: solid 6px #6e94c8;
+    position: relative;
+    width: 100%;
+  }
+
+  /* line 95, ../scss/responsive-styles/_sm.scss */
+  #meal_circles {
+    margin-top: -3em;
+  }
+
   /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 57, ../scss/responsive-styles/_sm.scss */
+  /* line 109, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 64, ../scss/responsive-styles/_sm.scss */
+  /* line 116, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 73, ../scss/responsive-styles/_sm.scss */
+  /* line 125, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5558,12 +5608,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 80, ../scss/responsive-styles/_sm.scss */
+  /* line 132, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 84, ../scss/responsive-styles/_sm.scss */
+  /* line 136, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }
