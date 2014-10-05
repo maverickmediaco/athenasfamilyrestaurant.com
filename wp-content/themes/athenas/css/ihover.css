@@ -23,14 +23,18 @@
 
 .ih-item.circle {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
+  z-index:9;
+  margin-top:-195px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .ih-item.circle .img {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
 }
 .ih-item.circle .img:before {
@@ -79,8 +83,8 @@
 }
 
 .ih-item.circle.effect1 .spinner {
-  width: 230px;
-  height: 230px;
+  width: 285px;
+  height: 285px;
   border: 10px solid #ecab18;
   border-right-color: #1ad280;
   border-bottom-color: #1ad280;

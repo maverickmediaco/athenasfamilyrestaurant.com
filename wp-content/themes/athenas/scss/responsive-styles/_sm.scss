@@ -89,6 +89,7 @@ MEALS
 	border-top:solid 6px #6e94c8;
 	position:relative;
 	width:100%;
+	padding-bottom:50px;
 }
 
 
@@ -97,6 +98,42 @@ MEALS
 }
 
 #circle_breakfast {
+	
+}
+
+.circle_title {
+	background:#0f64a9;
+	color:#fff;
+	font-size:34px;
+	font-family: 'benguiat_bk_btbook';
+	border:solid 4px #fff;
+	position:relative;
+	z-index:10;
+	margin-top:130px;
+	text-align:center;
+	width:65%;  
+    transform: skew(-20deg); 
+    -webkit-transform: skew(-20deg);
+}
+
+#circles_bg {
+	background:#6e94c8;
+	position:relative;
+	z-index:1;
+	margin-top:-180px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	width:90%;
+	height:130px;  
+    transform: skew(-20deg); 
+    -webkit-transform: skew(-20deg);
+}
+
+
+#greek_border {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_border.jpg) repeat-x;
+	height:47px;
 	
 }
 

@@ -5575,29 +5575,67 @@ Here you can begin to add more resource-intensive styles.
     border-top: solid 6px #6e94c8;
     position: relative;
     width: 100%;
+    padding-bottom: 50px;
   }
 
-  /* line 95, ../scss/responsive-styles/_sm.scss */
+  /* line 96, ../scss/responsive-styles/_sm.scss */
   #meal_circles {
     margin-top: -3em;
+  }
+
+  /* line 104, ../scss/responsive-styles/_sm.scss */
+  .circle_title {
+    background: #0f64a9;
+    color: #fff;
+    font-size: 34px;
+    font-family: 'benguiat_bk_btbook';
+    border: solid 4px #fff;
+    position: relative;
+    z-index: 10;
+    margin-top: 130px;
+    text-align: center;
+    width: 65%;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+  }
+
+  /* line 119, ../scss/responsive-styles/_sm.scss */
+  #circles_bg {
+    background: #6e94c8;
+    position: relative;
+    z-index: 1;
+    margin-top: -180px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90%;
+    height: 130px;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+  }
+
+  /* line 134, ../scss/responsive-styles/_sm.scss */
+  #greek_border {
+    background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_border.jpg) repeat-x;
+    height: 47px;
   }
 
   /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 109, ../scss/responsive-styles/_sm.scss */
+  /* line 146, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 116, ../scss/responsive-styles/_sm.scss */
+  /* line 153, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 125, ../scss/responsive-styles/_sm.scss */
+  /* line 162, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5608,12 +5646,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 132, ../scss/responsive-styles/_sm.scss */
+  /* line 169, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 136, ../scss/responsive-styles/_sm.scss */
+  /* line 173, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }

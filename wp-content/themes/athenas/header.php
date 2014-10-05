@@ -90,6 +90,7 @@
 </header>
 
 		
+<?php if ( is_front_page() ) { ?><!-- Homepage -->
 		
 		<?php // Interior Header Image ?>
         <div class="banner-wrap">
@@ -105,6 +106,7 @@
 <div id="meal_circles" class="row">
 			  <div class="col-sm-2"></div>
               <div id="circle_breakfast" class="col-sm-3">
+              <div class="circle_title">Breakfast</div>
                 <!-- colored -->
                 <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
                     <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
@@ -119,6 +121,7 @@
               </div>
               
                      <div id="circle_lunch" class="col-sm-3">
+                     <div class="circle_title">Lunch</div>
                 <!-- colored -->
                 <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
                     <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
@@ -133,6 +136,7 @@
               </div>
               
                      <div id="circle_dinner" class="col-sm-3">
+                     <div class="circle_title">Dinner</div>
                 <!-- colored -->
                 <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
                     <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/dinner_circle.png" alt="breakfast"></div>
@@ -148,12 +152,12 @@
               <div class="col-sm-1"></div>
             </div>
             <!-- end From left and right -->
-             
-             
-           
+            <div id="circles_bg" class="row"></div>
+ 
+        </div><!--End Meals -->
+        <div id="greek_border"></div>
         
-        
-        </div><!--End Meals--!>
+        <?php } ?><!-- End Homepage -->
 
 		<div id="content">
 
