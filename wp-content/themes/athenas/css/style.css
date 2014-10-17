@@ -5746,15 +5746,8 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   MENUS
   *********************/
-  /* line 231, ../scss/responsive-styles/_sm.scss */
-  #sunrisespecials {
-    background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
-    padding: 0 2em 2em;
-    border: solid 4px #0F64A9;
-  }
-
-  /* line 237, ../scss/responsive-styles/_sm.scss */
-  #pancakesorfrenchtoast {
+  /* line 230, ../scss/responsive-styles/_sm.scss */
+  #sunrisespecials, #pancakesorfrenchtoast, #morningextras {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
     padding: 0 2em 2em;
     border: solid 4px #0F64A9;
@@ -5763,19 +5756,19 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 252, ../scss/responsive-styles/_sm.scss */
+  /* line 242, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 259, ../scss/responsive-styles/_sm.scss */
+  /* line 249, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 268, ../scss/responsive-styles/_sm.scss */
+  /* line 258, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5786,12 +5779,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 276, ../scss/responsive-styles/_sm.scss */
+  /* line 266, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 280, ../scss/responsive-styles/_sm.scss */
+  /* line 270, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }
