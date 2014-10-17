@@ -83,6 +83,9 @@ Fonts
     font-style: normal;
 }
 
+
+
+
 /*********************
 GENERAL STYLES
 *********************/
@@ -103,6 +106,34 @@ body {
 		@include transition(all 0.25s ease-in-out);
     }
 	
+h1 {
+	font-family: 'benguiat_bk_btbook';
+	color:#1e74ae;
+	font-size:40px
+	}
+	
+h2 {
+	font-family: 'benguiat_bk_btbook';
+	color:#fff;
+	font-size:30px;
+	background:#1e74ae;
+	padding:0.2em;
+	text-align:center;
+}
+
+h3 {
+
+	font-family: 'blanchcaps';
+	color:#0F64A9;
+	font-size:40px;
+	text-decoration:underline;
+	margin-bottom:-0.5em;
+}
+
+p {
+	font-family: 'avantgarde_bk_btbook';
+}
+
 		
 }
 
@@ -124,6 +155,8 @@ HEADER SYTLES
 		.spacer {
 			padding-top: 26%; // change this value based on the aspect ratio of your header image
 		}
+		
+
 	}
 	
 /*********************
@@ -136,7 +169,10 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 #content {
-	margin: 2em 0;
+	margin: 0;
+	background:none;
+	padding-top:6em;
+	border-top: solid 6px #0D3874;
 
 	#inner-content{
 
@@ -477,8 +513,8 @@ FOOTER STYLES
 
 #colophon {
 	clear: both;
-	background-color:#111;
-	color:#999;
+	background-color:#0D3874;
+	color:#fff;
 	padding:1em 0;
 }
 
@@ -541,3 +577,4 @@ FOOTER STYLES
 			text-align: center;
 		}
 	}
+

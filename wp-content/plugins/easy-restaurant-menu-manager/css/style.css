@@ -49,7 +49,14 @@
 .wprmm_menu .menu_price {
   float: right;
   font-style: italic;
+  font-size:18px;
+  font-weight:500;
+  color:#0D3874;
+  margin-right:2em;
+  
 }
+
+
 .wprmm_menu .menu_icons {
   float:right;
 }

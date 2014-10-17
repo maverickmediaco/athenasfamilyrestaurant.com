@@ -6,7 +6,7 @@
 
 						<header class="article-header">
 
-							<h1 class="entry-title page-title"><?php the_title(); ?></h1>
+							
 
 						</header>
 
@@ -26,12 +26,7 @@
 
 						</footer>
 
-						<?php
-							// If comments are open or we have at least one comment, load up the comment template
-							if ( comments_open() || '0' != get_comments_number() ) :
-								comments_template();
-							endif;
-						?>
+					
 
 					</article>
 

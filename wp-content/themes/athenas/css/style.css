@@ -4900,18 +4900,18 @@ Fonts
 /*********************
 GENERAL STYLES
 *********************/
-/* line 89, ../scss/responsive-styles/_xs.scss */
+/* line 92, ../scss/responsive-styles/_xs.scss */
 html {
   height: 100%;
   overflow-x: hidden;
 }
 
-/* line 94, ../scss/responsive-styles/_xs.scss */
+/* line 97, ../scss/responsive-styles/_xs.scss */
 body {
   height: auto;
   overflow-x: hidden;
 }
-/* line 99, ../scss/responsive-styles/_xs.scss */
+/* line 102, ../scss/responsive-styles/_xs.scss */
 body #container {
   height: 100%;
   /*styles for mobile nav slide in*/
@@ -4923,23 +4923,50 @@ body #container {
   -transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
+/* line 109, ../scss/responsive-styles/_xs.scss */
+body h1 {
+  font-family: 'benguiat_bk_btbook';
+  color: #1e74ae;
+  font-size: 40px;
+}
+/* line 115, ../scss/responsive-styles/_xs.scss */
+body h2 {
+  font-family: 'benguiat_bk_btbook';
+  color: #fff;
+  font-size: 30px;
+  background: #1e74ae;
+  padding: 0.2em;
+  text-align: center;
+}
+/* line 124, ../scss/responsive-styles/_xs.scss */
+body h3 {
+  font-family: 'blanchcaps';
+  color: #0F64A9;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-bottom: -0.5em;
+}
+/* line 133, ../scss/responsive-styles/_xs.scss */
+body p {
+  font-family: 'avantgarde_bk_btbook';
+}
 
 /*********************
 HEADER SYTLES
 *********************/
 /* Ensure that there is no gap between the header and the admin bar for WordPress versions before 3.8. */
-/* line 114, ../scss/responsive-styles/_xs.scss */
+/* line 145, ../scss/responsive-styles/_xs.scss */
 #wpadminbar {
   min-height: 32px;
 }
 
-/* line 118, ../scss/responsive-styles/_xs.scss */
+/* line 149, ../scss/responsive-styles/_xs.scss */
 #banner {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 124, ../scss/responsive-styles/_xs.scss */
+/* line 155, ../scss/responsive-styles/_xs.scss */
 #banner .spacer {
   padding-top: 26%;
 }
@@ -4951,11 +4978,14 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 138, ../scss/responsive-styles/_xs.scss */
+/* line 171, ../scss/responsive-styles/_xs.scss */
 #content {
-  margin: 2em 0;
+  margin: 0;
+  background: none;
+  padding-top: 6em;
+  border-top: solid 6px #0D3874;
 }
-/* line 141, ../scss/responsive-styles/_xs.scss */
+/* line 177, ../scss/responsive-styles/_xs.scss */
 #content #inner-content {
   /* end .hentry */
   /* general title class */
@@ -4971,7 +5001,7 @@ POSTS & CONTENT STYLES
   /* post meta */
   /* entry content */
 }
-/* line 172, ../scss/responsive-styles/_xs.scss */
+/* line 208, ../scss/responsive-styles/_xs.scss */
 #content #inner-content .byline {
   color: #999;
   margin: -1em 0 1em;
@@ -4980,7 +5010,7 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVIGATION STYLES
 ******************************************************************/
-/* line 228, ../scss/responsive-styles/_xs.scss */
+/* line 264, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi {
   margin: 1em 0;
   /* current page link */
@@ -4992,12 +5022,12 @@ PAGE NAVIGATION STYLES
   /* first page link */
   /* last page link */
 }
-/* line 231, ../scss/responsive-styles/_xs.scss */
+/* line 267, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li {
   float: left;
   margin: 0;
 }
-/* line 235, ../scss/responsive-styles/_xs.scss */
+/* line 271, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li a {
   display: block;
   color: #333;
@@ -5005,43 +5035,43 @@ PAGE NAVIGATION STYLES
   padding: 3px 10px;
   position: relative;
 }
-/* line 243, ../scss/responsive-styles/_xs.scss */
+/* line 279, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li a:hover, .scaffolding_page_navi li a:focus {
   color: #008cba;
   text-decoration: underline;
 }
-/* line 252, ../scss/responsive-styles/_xs.scss */
+/* line 288, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current {
   background-color: #f5f5f5;
   color: #008cba;
   padding: 3px 10px;
   position: relative;
 }
-/* line 258, ../scss/responsive-styles/_xs.scss */
+/* line 294, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current a {
   /* hovering on current page link */
 }
-/* line 261, ../scss/responsive-styles/_xs.scss */
+/* line 297, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current a:hover, .scaffolding_page_navi li.bpn-current a:focus {
   color: #333;
 }
-/* line 271, ../scss/responsive-styles/_xs.scss */
+/* line 307, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link,
 .scaffolding_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-/* line 274, ../scss/responsive-styles/_xs.scss */
+/* line 310, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a,
 .scaffolding_page_navi li.bpn-next-link a {
   color: #008cba;
 }
-/* line 278, ../scss/responsive-styles/_xs.scss */
+/* line 314, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a:hover, .scaffolding_page_navi li.bpn-prev-link a:focus,
 .scaffolding_page_navi li.bpn-next-link a:hover,
 .scaffolding_page_navi li.bpn-next-link a:focus {
   color: #333;
 }
-/* line 288, ../scss/responsive-styles/_xs.scss */
+/* line 324, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a:hover,
 .scaffolding_page_navi li.bpn-next-link a:hover,
 .scaffolding_page_navi li.bpn-first-page-link a:hover,
@@ -5051,11 +5081,11 @@ PAGE NAVIGATION STYLES
 
 /* end .scaffolding_page_navi */
 /* fallback previous & next links */
-/* line 331, ../scss/responsive-styles/_xs.scss */
+/* line 367, ../scss/responsive-styles/_xs.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 335, ../scss/responsive-styles/_xs.scss */
+/* line 371, ../scss/responsive-styles/_xs.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -5355,32 +5385,32 @@ COMMENTS STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 352, ../scss/responsive-styles/_xs.scss */
+/* line 388, ../scss/responsive-styles/_xs.scss */
 .sidebar {
   margin-top: 2em;
 }
 
-/* line 356, ../scss/responsive-styles/_xs.scss */
+/* line 392, ../scss/responsive-styles/_xs.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 361, ../scss/responsive-styles/_xs.scss */
+/* line 397, ../scss/responsive-styles/_xs.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 365, ../scss/responsive-styles/_xs.scss */
+/* line 401, ../scss/responsive-styles/_xs.scss */
 .widget.first-widget {
   margin: 0 0 2.2em;
 }
-/* line 370, ../scss/responsive-styles/_xs.scss */
+/* line 406, ../scss/responsive-styles/_xs.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 378, ../scss/responsive-styles/_xs.scss */
+/* line 414, ../scss/responsive-styles/_xs.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -5400,41 +5430,41 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 478, ../scss/responsive-styles/_xs.scss */
+/* line 514, ../scss/responsive-styles/_xs.scss */
 #colophon {
   clear: both;
-  background-color: #111;
-  color: #999;
+  background-color: #0D3874;
+  color: #fff;
   padding: 1em 0;
 }
 
-/* line 485, ../scss/responsive-styles/_xs.scss */
+/* line 521, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu {
   display: inline-block;
   text-align: right;
   margin: 0;
   padding: 0;
 }
-/* line 491, ../scss/responsive-styles/_xs.scss */
+/* line 527, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li {
   display: inline-block;
   margin: 0 0 0 -4px;
   padding: 0;
 }
-/* line 496, ../scss/responsive-styles/_xs.scss */
+/* line 532, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li a {
   border-left: 1px solid #ccc;
   color: #999;
   line-height: normal;
   padding: 0 1em;
 }
-/* line 503, ../scss/responsive-styles/_xs.scss */
+/* line 539, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li:first-child a {
   border-left: none;
 }
 
 /* end .footer-menu */
-/* line 511, ../scss/responsive-styles/_xs.scss */
+/* line 547, ../scss/responsive-styles/_xs.scss */
 #back-top {
   position: fixed;
   bottom: 10px;
@@ -5442,7 +5472,7 @@ ul.footer-menu li:first-child a {
   right: 0;
   z-index: 9999;
 }
-/* line 518, ../scss/responsive-styles/_xs.scss */
+/* line 554, ../scss/responsive-styles/_xs.scss */
 #back-top a {
   width: 40px;
   display: block;
@@ -5461,12 +5491,12 @@ ul.footer-menu li:first-child a {
   -o-border-radius: 500px;
   border-radius: 500px;
 }
-/* line 527, ../scss/responsive-styles/_xs.scss */
+/* line 563, ../scss/responsive-styles/_xs.scss */
 #back-top a:hover, #back-top a:focus {
   color: #000;
   opacity: 1;
 }
-/* line 533, ../scss/responsive-styles/_xs.scss */
+/* line 569, ../scss/responsive-styles/_xs.scss */
 #back-top i {
   width: 40px;
   height: 40px;
@@ -5634,7 +5664,7 @@ Here you can begin to add more resource-intensive styles.
   #section2 {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/section2_bg_tile.jpg) repeat;
     color: #fff;
-    padding: 20px;
+    padding: 2em 2em 3em;
   }
 
   /* line 155, ../scss/responsive-styles/_sm.scss */
@@ -5649,36 +5679,103 @@ Here you can begin to add more resource-intensive styles.
     color: #fff;
     font-family: 'gando_btregular';
     font-size: 28px;
+    background: none;
+    text-align: left;
   }
 
-  /* line 167, ../scss/responsive-styles/_sm.scss */
-  #section2 P {
+  /* line 169, ../scss/responsive-styles/_sm.scss */
+  #section2 p {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  /* line 173, ../scss/responsive-styles/_sm.scss */
+  /* line 175, ../scss/responsive-styles/_sm.scss */
   #welcome {
     padding-top: 30px;
   }
 
   /*********************
+  SECTION 3
+  *********************/
+  /* line 183, ../scss/responsive-styles/_sm.scss */
+  #section3 {
+    background: #7A9BC6;
+    color: #fff;
+    padding: 20px;
+  }
+
+  /* line 189, ../scss/responsive-styles/_sm.scss */
+  #section3 h1 {
+    color: #fff;
+    font-family: 'benguiat_bk_btbook';
+    font-size: 30px;
+  }
+
+  /* line 195, ../scss/responsive-styles/_sm.scss */
+  #section3 h2 {
+    color: #fff;
+    font-family: 'gando_btregular';
+    font-size: 28px;
+  }
+
+  /* line 201, ../scss/responsive-styles/_sm.scss */
+  #section3 p {
+    color: #fff;
+    font-family: 'benguiat_bk_btbook';
+    font-size: 14px;
+  }
+
+  /* line 207, ../scss/responsive-styles/_sm.scss */
+  #section3 ul li {
+    color: #fff;
+    font-family: 'benguiat_bk_btbook';
+    font-size: 16px;
+  }
+
+  /* line 214, ../scss/responsive-styles/_sm.scss */
+  #specials_list {
+    padding-top: 2em;
+  }
+
+  /* line 220, ../scss/responsive-styles/_sm.scss */
+  #homepage_specials {
+    padding-top: 1em;
+  }
+
+  /*********************
+  MENUS
+  *********************/
+  /* line 231, ../scss/responsive-styles/_sm.scss */
+  #sunrisespecials {
+    background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
+    padding: 0 2em 2em;
+    border: solid 4px #0F64A9;
+  }
+
+  /* line 237, ../scss/responsive-styles/_sm.scss */
+  #pancakesorfrenchtoast {
+    background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
+    padding: 0 2em 2em;
+    border: solid 4px #0F64A9;
+  }
+
+  /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 182, ../scss/responsive-styles/_sm.scss */
+  /* line 252, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 189, ../scss/responsive-styles/_sm.scss */
+  /* line 259, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 198, ../scss/responsive-styles/_sm.scss */
+  /* line 268, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5689,12 +5786,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 205, ../scss/responsive-styles/_sm.scss */
+  /* line 276, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 209, ../scss/responsive-styles/_sm.scss */
+  /* line 280, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }

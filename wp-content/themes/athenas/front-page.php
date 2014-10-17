@@ -6,19 +6,11 @@
 
 						<header class="article-header">
 
-							<h1 class="entry-title page-title"><?php the_title(); ?></h1>
+							
 
 						</header>
 
-						<section class="entry-content clearfix">
-							<?php the_content(); ?>
-							<?php wp_link_pages( array(
-								'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'scaffolding' ) . '</span>',
-								'after'       => '</div>',
-								'link_before' => '<span>',
-								'link_after'  => '</span>',
-							) ); ?>
-						</section>
+						
 
 						<footer class="article-footer">
 
@@ -26,13 +18,7 @@
 
 						</footer>
 
-						<?php
-							// If comments are open or we have at least one comment, load up the comment template
-							if ( comments_open() || '0' != get_comments_number() ) :
-								comments_template();
-							endif;
-						?>
-
+						
 					</article>
 
 				<?php endwhile; ?>

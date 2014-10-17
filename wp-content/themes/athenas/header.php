@@ -168,6 +168,42 @@ We offer homemade food, quick service and a friendly atmosphere. Try our delicio
 			</div>
           
 		</div>
+         <div class="monday">
+           <div id="section3" class="row">
+           		<div class="col-md-1"></div>
+
+                <div id="homepage_specials" class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-12"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/weekdays/01monday.jpg" alt="Monday">
+                        </div>
+                    </div>    
+                    <div id="specials_list" class="row"> 
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Liver, Bacon & Onions</li>
+                                <li>Stuffed Cabbage</li>
+                                <li>8 oz. Chopped Sirloin </li>
+                                <li>Pot Roast</li>
+                                <li>Patty Melt</li>
+                            </ul>    
+                        </div>
+                        <div class="col-md-6">
+                             <ul>
+                                <li>Rack of Lamb Dinner</li>
+                                <li>Hot Roast Pork Sandwich</li>
+                                <li>Bologna Steak Sandwich</li>
+                                <li>Veal Parmigiana and Spaghetti</li>
+                                <li>Veal Parmigiana Sandwich</li>
+                            </ul> 
+                        </div>
+                  </div>     
+                  </div>   
+                <div class="col-md-1"></div>
+                <div class="col-md-4"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/todays_specials.jpg" alt="Monday"></div>
+                 <div class="col-md-1"></div>
+           </div>     
+         
+      
         
         <?php } ?><!-- End Homepage -->
 

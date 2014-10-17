@@ -149,7 +149,7 @@ SECTION 2
 #section2 {
 	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/section2_bg_tile.jpg) repeat;
 	color:#fff;
-	padding:20px;
+	padding:2em 2em 3em;
 }
 
 #section2 h1 {
@@ -162,17 +162,87 @@ SECTION 2
 	color:#fff;
 	font-family: 'gando_btregular';
 	font-size:28px;
+	background:none;
+	text-align:left;
 }
 
-#section2 P {
+#section2 p {
 	color:#fff;
 	font-family: 'benguiat_bk_btbook';
-	font-size:14px
+	font-size:15px
 }
 
 #welcome {
 	padding-top:30px;
 }
+
+/*********************
+SECTION 3
+*********************/
+
+#section3 {
+	background:#7A9BC6;
+	color:#fff;
+	padding:20px;
+}
+
+#section3 h1 {
+	color:#fff;
+	font-family: 'benguiat_bk_btbook';
+	font-size:30px;
+}
+
+#section3 h2 {
+	color:#fff;
+	font-family: 'gando_btregular';
+	font-size:28px;
+}
+
+#section3 p {
+	color:#fff;
+	font-family: 'benguiat_bk_btbook';
+	font-size:14px
+}
+
+#section3 ul li {
+	color:#fff;
+	font-family: 'benguiat_bk_btbook';
+	font-size:16px
+}
+
+
+#specials_list {
+	padding-top:2em;
+}
+
+
+
+#homepage_specials {
+	padding-top:1em;
+}
+	
+
+/*********************
+MENUS
+*********************/
+
+
+
+#sunrisespecials {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
+	padding:0 2em 2em;
+	border:solid 4px #0F64A9;
+}
+
+#pancakesorfrenchtoast {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
+	padding:0 2em 2em;
+	border:solid 4px #0F64A9;
+}
+
+
+
+
 
 /*********************
 STICKY FOOTER STYLES
@@ -200,6 +270,7 @@ body.sticky-footer {
 	    height: 1px;
 	    overflow: hidden;
 	}
+
 }
 
 html>/**/body.sticky-footer #container {
