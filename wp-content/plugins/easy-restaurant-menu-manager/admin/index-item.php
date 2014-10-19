@@ -68,7 +68,7 @@ $categories = $category->get_all($menu->id);
          <form method="post" action="<?php echo WPRMM_CRUD;?>">
            <input type="hidden" name="wprmm_crud[menu_id]" value="<?php echo $i->menu_id;?>" />
            <input type="hidden" name="wprmm_crud[item_id]" value="<?php echo $i->id;?>" />
-           <input type="submit" class="button" name="wprmm_crud[item]" value="Delete" onclick="return confirm('Are you sure you want to delete this item?')"/>
+           <input type="submit" class="button" name="wprmm_crud[item]" value="Delete" onclick="return confirm('Are you sure you want to delete this item?')" />
          </form>
        </td>
      </tr>

@@ -11,7 +11,7 @@ if( !empty($_POST) && !empty( $_POST['wprmm_crud'] ) ){
   
   /* Save New Menu */
   if( !empty($_POST['wprmm_crud']['menu']) ) {
-    if($_POST['wprmm_crud']['menu'] == 'new'){
+    if( $_POST['wprmm_crud']['menu'] == 'new'){
       $menu_id = WPRMM_Menu::create($_POST['wprmm']);
       wp_redirect(wprmm_admin_url('menu','edit-menu',$menu_id));
       exit;
@@ -24,8 +24,8 @@ if( !empty($_POST) && !empty( $_POST['wprmm_crud'] ) ){
       exit;
     }
   }
-    
-    
+  
+  
   /* Save New Category */
   if( !empty($_POST['wprmm_crud']['category']) ) {
     if($_POST['wprmm_crud']['category'] == 'new'){
@@ -42,12 +42,14 @@ if( !empty($_POST) && !empty( $_POST['wprmm_crud'] ) ){
       exit;
     }
   }
-    
-    
+  
+  
   /* Save New Item */
   if( !empty($_POST['wprmm_crud']['item']) ) {
     if($_POST['wprmm_crud']['item'] == 'new'){
       $item_id = WPRMM_Item::create($_POST['wprmm']);
+      #$category_id = (int) $_POST['wprmm_crud']['category_id'];
+      #$menu_id = (int) $_POST['wprmm_crud']['menu_id'];
       wp_redirect(wprmm_admin_url('item','edit-item',$item_id));
       exit;
     }
@@ -60,8 +62,8 @@ if( !empty($_POST) && !empty( $_POST['wprmm_crud'] ) ){
       exit;
     }
   }
-    
-    
+  
+  
   /* Save New Icon */
   if( !empty($_POST['wprmm_crud']['icon']) ) {
     if($_POST['wprmm_crud']['icon'] == 'new'){
@@ -76,8 +78,8 @@ if( !empty($_POST) && !empty( $_POST['wprmm_crud'] ) ){
       wp_redirect(admin_url('admin.php?page='.WPRMM_ADMIN_ICON_URL));
       exit;
     }
-  }  
-
-}
+  }
   
+}
+
 ?>

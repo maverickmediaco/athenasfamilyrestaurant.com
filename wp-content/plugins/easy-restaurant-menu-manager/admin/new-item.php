@@ -45,10 +45,14 @@ $categories = $category->get_all($menu->id);
           <th scope="row">Upload Image</th>
           <td>
             <label for="upload_image">
-              <input id="upload_image" type="text" size="36" name="wprmm[image]" value="" onclick="alert('You must upgrade to the extended version to add images to menu items.');" />
+              <?php $image = empty( $item->image ) ? '' : $item->image; ?>
+              <input id="upload_image" type="text" size="36" name="wprmm[image]" value="<?php echo $image;?>" />
               <input id="upload_image_button" type="button" value="Upload Image" />
               <span class="description">Enter an URL or upload an image for this item.</span>
             </label>
+            <?php if(!empty($item->image)):?>
+              <img class="wprmm_preview_image" src="<?php echo $item->image;?>"/>
+            <?php endif;?>
           </td>
         </tr>
 
@@ -71,7 +75,7 @@ $categories = $category->get_all($menu->id);
         </tr>
 
         <tr valign="top">
-          <th scope="row"><label for="wprmm[show_price]">Show Price</label></th>
+          <th scope="row"><label for="wprmm[show_price]">Show Prices</label></th>
           <td>
             <input type="hidden" name="wprmm[show_price]" value="0" />
             <input type="checkbox" name="wprmm[show_price]" value="1" <?php echo ($item->show_price == 1) ? 'checked' : '';?>/>
@@ -86,9 +90,9 @@ $categories = $category->get_all($menu->id);
               <?php foreach($categories as $cat):?>
                 <option value="<?php echo $cat->id;?>" <?php echo ($item->category_id == $cat->id)? 'selected' : '';?>><?php echo $cat->name;?></option>
               <?php endforeach;?>
-              <option value="0" <?php echo ($item->category_id == "0")? 'selected' : '';?>>None (hidden)</option>
+              <option value="0">None (hidden)</option>
             </select>
-            <span class="description">Category for this item in this menu. Controls layout of items. Setup Categories and then items.</span>
+            <span class="description">Category for this item in this menu. Controls layout of items.</span>
           </td>
         </tr>
 

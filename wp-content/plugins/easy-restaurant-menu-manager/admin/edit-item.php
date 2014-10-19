@@ -20,7 +20,7 @@ $categories = $category->get_all($menu->id);
   <p class="wprmm-breadcrumb">
     <a href="<?php echo admin_url('admin.php?page='.WPRMM_ADMIN_URL);?>">Menus</a> &raquo; 
     <a href="<?php echo wprmm_admin_url('menu','edit-menu',$menu->id);?>"><?php echo $menu->name;?></a> &raquo; 
-    <a href="<?php echo wprmm_admin_url('menu','index-item',$menu->id);?>">Items</a> &raquo;
+    <a href="<?php echo wprmm_admin_url('menu','index-item',$menu->id);?>">Items</a> &raquo; 
     <a href="<?php echo $_SERVER['REQUEST_URI']; ?>"><?php echo $item->name;?></a>
   </p>
 
@@ -47,10 +47,13 @@ $categories = $category->get_all($menu->id);
           <th scope="row">Upload Image</th>
           <td>
             <label for="upload_image">
-              <input id="upload_image" type="text" size="36" name="wprmm[image]" value="" onclick="alert('You must upgrade to the extended version to add images to menu items.');" />
+              <input id="upload_image" type="text" size="36" name="wprmm[image]" value="<?php echo $item->image;?>" />
               <input id="upload_image_button" type="button" value="Upload Image" />
               <span class="description">Enter an URL or upload an image for this item.</span>
             </label>
+            <?php if(!empty($item->image)):?>
+              <img class="wprmm_preview_image" src="<?php echo $item->image;?>"/>
+            <?php endif;?>
           </td>
         </tr>
 
@@ -69,7 +72,7 @@ $categories = $category->get_all($menu->id);
         </tr>
 
         <tr valign="top">
-          <th scope="row"><label for="wprmm[show_price]">Show Price</label></th>
+          <th scope="row"><label for="wprmm[show_price]">Show Prices</label></th>
           <td>
             <input type="checkbox" name="wprmm[show_price]" value="1" <?php echo ($item->show_price == 1) ? 'checked' : '';?>/>
             <span class="description">Display the price for this item.</span>

@@ -35,8 +35,13 @@ $menu = new WPRMM_Menu((int) $category->menu_id);
 
         <tr valign="top">
           <th scope="row"><label for="wprmm[description]">Description</label></th>
-          <td><textarea name="wprmm[description]" class="large-text code"><?php echo $category->description;?></textarea>
-              <span class="description">Display description for this category.</span>
+          <td>
+            <?php if( function_exists('wp_editor') ):?>
+              <?php wp_editor($category->description, 'wprmmdescription', array('textarea_name' => "wprmm[description]", 'media_buttons' => false));?>
+            <?php else: ?>
+              <textarea name="wprmm[description]" class="large-text code"><?php echo $category->description;?></textarea>
+            <?php endif;?>
+            <span class="description">Display description for this category.</span>
           </td>
         </tr>
 

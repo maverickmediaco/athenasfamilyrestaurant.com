@@ -148,9 +148,12 @@ HEADER SYTLES
 	#logo {}
 	#banner {
 
-		background-position:top center;
-		background-repeat:no-repeat;
-		background-size: cover;
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/header1.jpg) no-repeat fixed !important;
+	background-size: cover;
+	background-position: top;
+	height: 500px;
+	font-weight: 300;
+	
 
 		.spacer {
 			padding-top: 26%; // change this value based on the aspect ratio of your header image

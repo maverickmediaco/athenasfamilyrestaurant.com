@@ -1,34 +1,24 @@
 <?php
 /*
-Plugin Name: Easy Restaurant Menu Manager
-Plugin URI: http://www.sailabs.co/products/easy-restaurant-menu-manager-wordpress/
+Plugin Name: Easy Restaurant Menu Manager - Extended
+Plugin URI: http://saidigital.co
 Description: Makes it easy for a restaurant to maintain an online menu. Includes categories, prices and descriptions that are a snap to update.
-Version: 1.5.2
+Version: 10.1.5.2
 Author: Sarah Tebo, Richard Royal
-Author URI: http://www.sailabs.co
+Author URI: http://saidigital.co
 */
 
 
-/*
-Copyright (C) 2012, 2013, 2014 SAI Digital
-@author Richard Royal, Sarah Tebo
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*  
+    Copyright 2014 SAI Digital (info@saidigital.co)
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    @author Richard Royal, Sarah Tebo
 */
-
 
 defined('WP_PLUGIN_URL') or die('Restricted access');
+
 
 global $wpdb;
 define('WPRMM_PATH',ABSPATH.PLUGINDIR."/easy-restaurant-menu-manager/");
@@ -59,7 +49,6 @@ require_once("views/layouts.php");
 require_once("views/view.menu.php");
 require_once("views/view.printer-friendly.php");
 require_once("views/view.feed.php");
-
 
 
 
@@ -165,7 +154,6 @@ function wprmm_shortcode_handler($atts, $content=null, $code=""){
   }
 
   return wprmm_get_menu($atts, $categories);
-  
 }add_shortcode('WP_Restaurant_Menu', 'wprmm_shortcode_handler');
 
 
@@ -179,7 +167,8 @@ function wprmm_shortcode_handler($atts, $content=null, $code=""){
 function wprmm_parse_export($wp) {
     // only process requests POST'ed to "/?wprmm-routing=export"
     if (array_key_exists('wprmm-routing', $wp->query_vars) && $wp->query_vars['wprmm-routing'] == 'export') {
-      echo wprmm_get_printer_friendly_menu($_GET['menu_id']);
+      $menu_id = (int) $_GET['menu_id'];
+      echo wprmm_get_printer_friendly_menu($menu_id);
       die();exit();
     }
 }add_action('parse_request', 'wprmm_parse_export');
@@ -207,8 +196,9 @@ function wprmm_parse_asset($wp) {
       header( 'Content-Type: text/css' );
       echo $custom_css;
       die();exit();
-    }    
+    }
 }add_action('parse_request', 'wprmm_parse_asset');
+
 
 
 function wprmm_parse_rss2($wp) {
@@ -218,6 +208,7 @@ function wprmm_parse_rss2($wp) {
       die();exit();
     }
 }add_action('parse_request', 'wprmm_parse_rss2');
+
 
 
 function wprmm_parse_query_vars($vars) {

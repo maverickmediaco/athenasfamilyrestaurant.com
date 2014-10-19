@@ -71,12 +71,23 @@ HEADER
 	color:#fff;
 	max-height:35px;
 	font-size:22px;
+	tex-align:center;
 }
 
 #tel {
 	color:#fff;
 	font-size:22px;
 	padding-top:2px;
+}
+
+/*********************
+BANNER
+*********************/
+
+.greek_am_badge {
+	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_american.png);
+	<position:relative;
+	float:left;
 }
 
 

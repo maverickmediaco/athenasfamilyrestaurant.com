@@ -56,8 +56,13 @@
             <div class="row-fluid">
                 <div class="col-md-7"></div>
                 <div id="order-now"class="col-md-2"><p>Order Now!</p></div>
-                <div id="tel-no"class="col-md-2"><p>(716) 692-2626</p></div>
-                <div id="tel" class="col-md-1"><span class="glyphicon glyphicon-earphone"></span></div>
+                <div class="col-md-3">
+                  <div class="row-fluid">
+                  	<div id="tel" class="col-md-2"><span class="glyphicon glyphicon-earphone"></span></div>
+                    <div id="tel-no"class="col-md-9"><p>(716) 692-2626</p></div>
+                    <div class="col-md-1"></div>
+                  </div>  
+                </div>
             </div>
          </div>   
     </div>

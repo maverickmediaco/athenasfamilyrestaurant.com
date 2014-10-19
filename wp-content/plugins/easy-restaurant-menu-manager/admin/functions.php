@@ -50,7 +50,6 @@ function wprmm_load_admin_page(){
  */
 function wprmm_load_admin_icon_page(){
   $admin_icon_page = empty($_GET[WPRMM_ADMIN_ICON_PARSE]) ? '' : $_GET[WPRMM_ADMIN_ICON_PARSE];
-
   switch($admin_icon_page){
     case '':
       require("icons/index.php");
@@ -192,12 +191,13 @@ function wprmm_get_help($main = array()){
 
 /* Save Global Settings */
 function wprmm_save_global_settings(){
+
   if( !empty($_POST)  && $_POST['save_options'] == 'Save Options'){
     $options = $_POST['wprmm'];
-  
+
     $css = $options['custom_css'];
     update_option( 'wprmm_custom_css', $css );
-  
+
     $css = $options['custom_print_css'];
     update_option( 'wprmm_custom_print_css', $css );
   }
@@ -209,14 +209,14 @@ function wprmm_save_global_settings(){
 
 
 /**
- *  Check user authorization by role name.
+ *  Check user authorization by role name. 
  *
  *  @see http://docs.appthemes.com/tutorials/wordpress-check-user-role-function/
  */
 function wprmm_check_user_role($role){
   $user = wp_get_current_user();
   if( empty($user) ){
-    return false;  
+    return false;
   } else {
     return in_array( $role, (array) $user->roles ); 
   }
@@ -231,30 +231,27 @@ function wprmm_check_user_role($role){
  */
 function wprmm_editor_or_admin(){
   if( wprmm_check_user_role('editor') || wprmm_check_user_role('administrator') ){
-    return true;  
-  } else {
-    return false;  
+    return true;
+  } else { 
+    return false;
   }
 }
 
 
 
-
-/**
- * Converts saved category layout name to full layout name.
- */
-function ermm_full_layout_name( $layout ){
-  $name = $layout;
-  $layouts = ermm_defined_layouts();
-  foreach( ermm_defined_layouts() as $l ){
-    if( $l['safe_name'] == $layout ){
-      $name = $l['name'];
+ /**
+  * Converts saved category layout name to full layout name.
+  */
+  function ermm_full_layout_name( $layout ){
+    $name = $layout;
+    $layouts = ermm_defined_layouts();
+    foreach( ermm_defined_layouts() as $l ){
+      if( $l['safe_name'] == $layout ){
+        $name = $l['name'];
+      }
     }
+    return $name;
   }
-  return $name;
-}
-
-
 
 
 ?>

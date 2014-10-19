@@ -52,8 +52,8 @@ $menus = $menu->get_all();
          <a href="<?php echo site_url()."?wprmm-routing=export&menu_id=".$m->id;?>" target="_blank">Print Menu</a>
        </td>
        <td>
-         <form method="post" action="#">
-           <input type="submit" class="button" name="wprmm_crud[menu]" value="Delete" onclick="alert('You cannot delete this menu.')" />
+         <form method="post" action="<?php echo WPRMM_CRUD;?>">
+           <input type="submit" class="button" name="wprmm_crud[menu]" value="Delete" onclick="return confirm('Are you sure you want to delete this entire menu?')" />
            <input type="hidden" name="wprmm_crud[menu_id]" value="<?php echo $m->id;?>" />
          </form>
        </td>
@@ -64,7 +64,7 @@ $menus = $menu->get_all();
 
   <div class="wprmm-admin-nav">
     <p>
-      <a class="button-primary" href="#" onclick="alert('You must upgrade to the extended version in order to have more than one menu. You can edit the currently setup menu, and create and manage categories and items.');">+ Create New Menu</a>&nbsp;
+      <a class="button-primary" href="<?php echo wprmm_admin_url('menu','new-menu','new');?>">+ Create New Menu</a>&nbsp;
       <span><a class="button" href="<?php echo wprmm_help_link(); ?>">help?</a></span>&nbsp;
     </p>
   </div>

@@ -34,17 +34,22 @@ $category->menu_id = $menu->id;
 
         <tr valign="top">
           <th scope="row"><label for="wprmm[description]">Description</label></th>
-          <td><textarea name="wprmm[description]" class="large-text code"><?php echo $category->description;?></textarea>
-              <span class="description">Display description for this category.</span>
+          <td>
+            <?php if( function_exists('wp_editor') ):?>
+              <?php wp_editor($category->description, 'wprmmdescription', array('textarea_name' => "wprmm[description]", 'media_buttons' => false));?>
+            <?php else: ?>
+              <textarea name="wprmm[description]" class="large-text code"><?php echo $category->description;?></textarea>
+            <?php endif;?>
+            <span class="description">Display description for this category.</span>
           </td>
         </tr>
 
         <tr valign="top">
           <th scope="row"><label for="wprmm[show_title]">Show Title?</label></th>
           <td>
-              <input type="hidden" name="wprmm[show_title]" value="0" />
-              <input type="checkbox" name="wprmm[show_title]" value="1" <?php echo ($category->show_title == 1) ? 'checked' : '';?>/>
-              <span class="description">Display title text on frontend for category.</span>
+            <input type="hidden" name="wprmm[show_title]" value="0" />
+            <input type="checkbox" name="wprmm[show_title]" value="1" <?php echo ($category->show_title == 1) ? 'checked' : '';?>/>
+            <span class="description">Display title text on frontend for category.</span>
           </td>
         </tr>
         <tr valign="top">

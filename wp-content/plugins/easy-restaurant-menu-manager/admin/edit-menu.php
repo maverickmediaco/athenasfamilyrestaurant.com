@@ -19,6 +19,7 @@ $menu = new WPRMM_Menu((int) $_GET['menu_id']);
   </p>
 
 
+
   <form method="POST" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
 
     <table class="form-table">
@@ -26,7 +27,7 @@ $menu = new WPRMM_Menu((int) $_GET['menu_id']);
 
         <tr valign="top">
           <th scope="row"><label for="wprmm[name]">Name</label></th>
-          <td><input name="wprmm[name]" type="text" value="<?php echo $menu->name;?>" class="regular-text">
+          <td><input name="wprmm[name]" type="text" value="<?php echo $menu->name;?>" class="regular-text" required="required">
               <span class="description">Display name for this menu.</span>
           </td>
         </tr>
@@ -41,8 +42,13 @@ $menu = new WPRMM_Menu((int) $_GET['menu_id']);
 
         <tr valign="top">
           <th scope="row"><label for="wprmm[description]">Description</label></th>
-          <td><textarea name="wprmm[description]" class="large-text code"><?php echo $menu->description;?></textarea>
-              <span class="description">Display description for this menu.</span>
+          <td>
+            <?php if( function_exists('wp_editor') ):?>
+              <?php wp_editor($menu->description, 'wprmmdescription', array('textarea_name' => "wprmm[description]", 'media_buttons' => false));?>
+            <?php else: ?>
+              <textarea name="wprmm[description]" class="large-text code"><?php echo $menu->description;?></textarea>
+            <?php endif;?>
+            <span class="description">Display description for this menu.</span>
           </td>
         </tr>
 
@@ -67,11 +73,12 @@ $menu = new WPRMM_Menu((int) $_GET['menu_id']);
         <tr valign="top">
           <th scope="row"><label for="wprmm[show_link]">Show print link?</label></th>
           <td>
-            <input type="checkbox" name="wprmm[show_link]" value="1" <?php echo ($menu->show_link == 1) ? 'checked' : '';?>/>
+            <input type="checkbox" name="wprmm[show_link]" value="1" <?php echo ($menu->show_link == 1) ? 'checked' : '';?> />
             <span class="description">Shows the link to the printer friendly version of the menu on the frontend.</span>
           </td>
         </tr>
-        
+
+
         <tr valign="top">
           <th scope="row"><label for="wprmm[rss2]">Turn on RSS?</label></th>
           <td>
@@ -82,7 +89,7 @@ $menu = new WPRMM_Menu((int) $_GET['menu_id']);
               <a href="<?php echo $menu->rss2_url;?>" target="_blank"><?php echo $menu->rss2_url;?></a>
             </span>
           </td>
-        </tr>        
+        </tr>
         
 
       </tbody>

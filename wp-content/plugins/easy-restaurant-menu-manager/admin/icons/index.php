@@ -38,12 +38,12 @@ $icons = $icon->get_all();
     <?php foreach($icons as $i): ?>
      <tr>
        <td><strong><?php echo $i->name;?></strong></td>
-       <td><a href="#" onclick="alert('You must upgrade to the extended version to modify icons and create your own.');"><?php echo $i->name; ?></a></td>
+       <td><a href="<?php echo wprmm_admin_icon_url('icon','edit-icon',$i->id);?>"><?php echo $i->name; ?></a></td>
        <td><?php echo $i->description;?></td>
        <td><?php if(!empty($i->image)) echo '<img src="'.$i->image.'" />';?></td>
        <td>
-         <form method="post" action="#">
-           <input type="submit" class="button" name="wprmm_crud[icon]" value="Delete" onclick="alert('You cannot delete this icon.');" />
+         <form method="post" action="<?php echo WPRMM_CRUD;?>">
+           <input type="submit" class="button" name="wprmm_crud[icon]" onclick="return confirm('Are you sure you?')" value="Delete" />
            <input type="hidden" name="wprmm_crud[icon_id]" value="<?php echo $i->id;?>" />
          </form>
        </td>
@@ -54,7 +54,7 @@ $icons = $icon->get_all();
 
   <div class="wprmm-admin-nav">
     <p>
-      <a class="button-primary" href="#" onclick="alert('You must upgrade to the extended version in order to edit and create custom icons.');">+ Create New Icon</a>&nbsp;
+      <a class="button-primary" href="<?php echo wprmm_admin_icon_url('icon','new-icon','new');?>">+ Create New Icon</a>&nbsp;
       <span><a class="button" href="<?php echo wprmm_help_link(); ?>">help?</a></span>&nbsp;
     </p>
   </div>

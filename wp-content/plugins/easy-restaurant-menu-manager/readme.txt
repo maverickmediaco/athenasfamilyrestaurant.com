@@ -1,10 +1,11 @@
-=== Easy Restaurant Menu Manager ===
+=== Easy Restaurant Menu Manager - Extended  ===
 Contributors: sarahtebo, richardroyal
 Donate link: http://www.sailabs.co/products/easy-restaurant-menu-manager-wordpress/
 Tags: restaurant, eatery, menus, hotel, bar, list
 Requires at least: 3.1.1
 Tested up to: 3.8.1
 Stable tag: 1.0.0
+Version: 10.1.5.2 - Extended
 
 Makes it easy for a restaurant to maintain an online menu. Includes categories, prices and descriptions that are a snap to update.
 
@@ -29,9 +30,7 @@ Tired of using PDFs to post your restaurant's menus online? Easy Restaurant Menu
 
 = Features =
 
-We offer a free version of ERMM, as well as an extended paid version. Your purchase allows us to continue developing and improving the plugin, while providing free support through our Zen Desk support forum.
-
-**Free Version**
+Free Version 
 
 * Easy restaurant menu management
 * Place restaurant menus anywhere with shortcodes
@@ -44,7 +43,7 @@ We offer a free version of ERMM, as well as an extended paid version. Your purch
 * Supports common responsive frameworks like Twitter Bootstrap and Foundation
 * Filter which categories get shown through the shortcode
 
-**Extended Version**
+Extended Version
 
 * Create multiple menus
 * WYSIWYG editor on menu and category descriptions
@@ -64,9 +63,6 @@ We offer a free version of ERMM, as well as an extended paid version. Your purch
 3. A new menu item called "Manage Menus" will appear in your dashboard navigation. You can go there to start creating menus, categories and items.
 
 == Frequently Asked Questions ==
-
-= Where can I get support? =
-We offer free support from our Zendesk-powered Help Center: [Easy Restaurant Menu Manager for WordPress Support Forum](http://sailabs.zendesk.co)
 
 = What will the menu look like on my site? =
 The Easy Restaurant Menu Manager plugin is designed to work with your WordPress site's theme, using your fonts and colors to seamlessly fit in with the rest of your site. If you want to tweak how the menu displays, you can enter custom CSS into the plugin from the settings panel.
@@ -92,10 +88,6 @@ Using the free version, you can create one menu only. However, with the extended
 = How do I insert my menu into a page or post? =
 Just use the shortcode [WP_Restaurant_Menu id="{DB id}"], the id and entire shortcode is made available on the menu edit screen on the WordPress backend.
 
-= Can I use a shortcode to only show certain categories? =
-
-Yes. Add a 'categories' key to the shortcode including a comma separted list of numeric ids for the categories you want to show from within the menu. For example: [WP_Restaurant_Menu id="1" categories="1,2,6,8"] would show items in categories 1,2,6,8, and [WP_Restaurant_Menu id="1" categories="1"] only shows items from category 1. The category ids can be found on the admin category index.
-
 = What about printing the menu? =
 We know many restaurants want to provide a version of their menu that customers can print and keep on hand. With the Easy Restaurant Menu Manager plugin, you can choose to include a "Print this menu" link that will generate a printer-friendly version of your menu.
 
@@ -116,71 +108,54 @@ Each menu has its own RSS feed, which means customers can easily keep track of c
 
 == Changelog ==
 
-= 1.5.2 =
-* Fixed bug in URL encoding of print link on frontend.
+= 10.1.5.1 =
+* Fixed bug in URL encoding of print link on fronend.
 
-= 1.5.1 =
+= 10.1.5.1 =
 * Fixed bug in stripping slashes in dynamic CSS output.
 * Added printer view URL to menu edit.
 * Added admin menu icon.
 * Fixed bugs in URL encoding.
 
-= 1.5.0 =
+= 10.1.5.0 =
 * Added category shortcodes to allow easy modification of which categories are shown.
 * Added shortcode to menu index.
 * Added link to items index on item edit.
 * Fixed minor encoding bug on menu XML RSS feed.
 * Combed through plugin functions with debug on to remove warnings. 
 
-= 1.4.1 =
+= 10.1.4.1 =
 * Added new links to Zen Desk support Help Center in plugin and on readme.
 
-= 1.4.0 =
+= 10.1.4.0 =
 * Made it easier to add custom layouts.
 * Added responsive layouts for Twitter Bootstrap and Zurb Foundation.
 
-= 1.3.0 =
+= 10.1.3.0 =
 * Added better breadcrumb navigation for admin.
 * Buffered delete clicks with JS pop-up alert.
 * Fixed checkbox saving issue on new records.
 
-= 1.2.2 =
-* Cleaned up PHP notices with WordPress DEBUG feature for new items form.
+= 10.1.2.2 =
+* Cleaned up PHP notices with WordPress DEBUG feature.
 
-= 1.2.1 =
-* Cleaned up PHP notices with WordPress DEBUG feature. 
-
-= 1.1.1 =
+= 10.1.1.1 =
 * Added dynamic print stylesheet that is easily customizable on backend.
 * Used CSS !important tag to forcibly remove bullets points from ul and li elements.
 * Clearified Default Category meaning on backend.
 
-= 1.1.0 =
+= 10.1.1.0 =
 * Added RSS2 Feed for each menu.
 
-= 1.0.9 =
+= 10.0.2 =
 * Fixed bug preventing users with editor role from editing menu content.
 
-= 1.0.8 =
-* Converted newlines to HTML break tags on output of menu, category, and item descriptions on frontend view.
-
-= 1.0.7 =
-* Allowed editors, not just admins to edit menus.
-
-= 1.0.6 =
-* Added boolean for choosing whether to display menu title on frontend.
-
-= 1.0.5 =
-* Added unique CSS ID to each menu.
-
-= 1.0.4 =
-* Improved directions on backend for item category.
-* Fixed spelling issue on backend.
-* Forced new items to have display_order = 0.
-* Made $item->display_order = 0 when POST'ed as blank.
+= 10.0.1 =
+* Converted newlines to HTML break tags on output of menu item descriptions on frontend view.
+* Added WYSIWYG to admin category and menu descriptions and converted newlines to breaks on frontend.
 
 = 1.0.3 =
-* Added secondary menu price for full and half order etc prices. 
+* Added secondary menu price for full and half order etc prices.
 * Improved the admin Settings page directions.
 
 = 1.0.2 =
@@ -194,10 +169,7 @@ Each menu has its own RSS feed, which means customers can easily keep track of c
 
 == Upgrade Notice ==
 
-= 1.1.0 =
-Requires Deactivation and then Activation to flush database change. You will not lose any data.
-
-= 1.0.6 =
+= 10.1.1.0 =
 Requires Deactivation and then Activation to flush database change. You will not lose any data.
 
 = 1.0.3 =
@@ -205,3 +177,4 @@ Adds ability to have two prices for an item, for example: Full Price, Half Price
 
 = 1.0.0 =
 Originating version.
+

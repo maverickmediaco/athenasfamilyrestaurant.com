@@ -4962,11 +4962,13 @@ HEADER SYTLES
 
 /* line 149, ../scss/responsive-styles/_xs.scss */
 #banner {
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/header1.jpg) no-repeat fixed !important;
   background-size: cover;
+  background-position: top;
+  height: 500px;
+  font-weight: 300;
 }
-/* line 155, ../scss/responsive-styles/_xs.scss */
+/* line 158, ../scss/responsive-styles/_xs.scss */
 #banner .spacer {
   padding-top: 26%;
 }
@@ -4978,14 +4980,14 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 171, ../scss/responsive-styles/_xs.scss */
+/* line 174, ../scss/responsive-styles/_xs.scss */
 #content {
   margin: 0;
   background: none;
   padding-top: 6em;
   border-top: solid 6px #0D3874;
 }
-/* line 177, ../scss/responsive-styles/_xs.scss */
+/* line 180, ../scss/responsive-styles/_xs.scss */
 #content #inner-content {
   /* end .hentry */
   /* general title class */
@@ -5001,7 +5003,7 @@ POSTS & CONTENT STYLES
   /* post meta */
   /* entry content */
 }
-/* line 208, ../scss/responsive-styles/_xs.scss */
+/* line 211, ../scss/responsive-styles/_xs.scss */
 #content #inner-content .byline {
   color: #999;
   margin: -1em 0 1em;
@@ -5010,7 +5012,7 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVIGATION STYLES
 ******************************************************************/
-/* line 264, ../scss/responsive-styles/_xs.scss */
+/* line 267, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi {
   margin: 1em 0;
   /* current page link */
@@ -5022,12 +5024,12 @@ PAGE NAVIGATION STYLES
   /* first page link */
   /* last page link */
 }
-/* line 267, ../scss/responsive-styles/_xs.scss */
+/* line 270, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li {
   float: left;
   margin: 0;
 }
-/* line 271, ../scss/responsive-styles/_xs.scss */
+/* line 274, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li a {
   display: block;
   color: #333;
@@ -5035,43 +5037,43 @@ PAGE NAVIGATION STYLES
   padding: 3px 10px;
   position: relative;
 }
-/* line 279, ../scss/responsive-styles/_xs.scss */
+/* line 282, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li a:hover, .scaffolding_page_navi li a:focus {
   color: #008cba;
   text-decoration: underline;
 }
-/* line 288, ../scss/responsive-styles/_xs.scss */
+/* line 291, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current {
   background-color: #f5f5f5;
   color: #008cba;
   padding: 3px 10px;
   position: relative;
 }
-/* line 294, ../scss/responsive-styles/_xs.scss */
+/* line 297, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current a {
   /* hovering on current page link */
 }
-/* line 297, ../scss/responsive-styles/_xs.scss */
+/* line 300, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-current a:hover, .scaffolding_page_navi li.bpn-current a:focus {
   color: #333;
 }
-/* line 307, ../scss/responsive-styles/_xs.scss */
+/* line 310, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link,
 .scaffolding_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-/* line 310, ../scss/responsive-styles/_xs.scss */
+/* line 313, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a,
 .scaffolding_page_navi li.bpn-next-link a {
   color: #008cba;
 }
-/* line 314, ../scss/responsive-styles/_xs.scss */
+/* line 317, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a:hover, .scaffolding_page_navi li.bpn-prev-link a:focus,
 .scaffolding_page_navi li.bpn-next-link a:hover,
 .scaffolding_page_navi li.bpn-next-link a:focus {
   color: #333;
 }
-/* line 324, ../scss/responsive-styles/_xs.scss */
+/* line 327, ../scss/responsive-styles/_xs.scss */
 .scaffolding_page_navi li.bpn-prev-link a:hover,
 .scaffolding_page_navi li.bpn-next-link a:hover,
 .scaffolding_page_navi li.bpn-first-page-link a:hover,
@@ -5081,11 +5083,11 @@ PAGE NAVIGATION STYLES
 
 /* end .scaffolding_page_navi */
 /* fallback previous & next links */
-/* line 367, ../scss/responsive-styles/_xs.scss */
+/* line 370, ../scss/responsive-styles/_xs.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 371, ../scss/responsive-styles/_xs.scss */
+/* line 374, ../scss/responsive-styles/_xs.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -5385,32 +5387,32 @@ COMMENTS STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 388, ../scss/responsive-styles/_xs.scss */
+/* line 391, ../scss/responsive-styles/_xs.scss */
 .sidebar {
   margin-top: 2em;
 }
 
-/* line 392, ../scss/responsive-styles/_xs.scss */
+/* line 395, ../scss/responsive-styles/_xs.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 397, ../scss/responsive-styles/_xs.scss */
+/* line 400, ../scss/responsive-styles/_xs.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 401, ../scss/responsive-styles/_xs.scss */
+/* line 404, ../scss/responsive-styles/_xs.scss */
 .widget.first-widget {
   margin: 0 0 2.2em;
 }
-/* line 406, ../scss/responsive-styles/_xs.scss */
+/* line 409, ../scss/responsive-styles/_xs.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 414, ../scss/responsive-styles/_xs.scss */
+/* line 417, ../scss/responsive-styles/_xs.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -5430,7 +5432,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 514, ../scss/responsive-styles/_xs.scss */
+/* line 517, ../scss/responsive-styles/_xs.scss */
 #colophon {
   clear: both;
   background-color: #0D3874;
@@ -5438,33 +5440,33 @@ FOOTER STYLES
   padding: 1em 0;
 }
 
-/* line 521, ../scss/responsive-styles/_xs.scss */
+/* line 524, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu {
   display: inline-block;
   text-align: right;
   margin: 0;
   padding: 0;
 }
-/* line 527, ../scss/responsive-styles/_xs.scss */
+/* line 530, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li {
   display: inline-block;
   margin: 0 0 0 -4px;
   padding: 0;
 }
-/* line 532, ../scss/responsive-styles/_xs.scss */
+/* line 535, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li a {
   border-left: 1px solid #ccc;
   color: #999;
   line-height: normal;
   padding: 0 1em;
 }
-/* line 539, ../scss/responsive-styles/_xs.scss */
+/* line 542, ../scss/responsive-styles/_xs.scss */
 ul.footer-menu li:first-child a {
   border-left: none;
 }
 
 /* end .footer-menu */
-/* line 547, ../scss/responsive-styles/_xs.scss */
+/* line 550, ../scss/responsive-styles/_xs.scss */
 #back-top {
   position: fixed;
   bottom: 10px;
@@ -5472,7 +5474,7 @@ ul.footer-menu li:first-child a {
   right: 0;
   z-index: 9999;
 }
-/* line 554, ../scss/responsive-styles/_xs.scss */
+/* line 557, ../scss/responsive-styles/_xs.scss */
 #back-top a {
   width: 40px;
   display: block;
@@ -5491,12 +5493,12 @@ ul.footer-menu li:first-child a {
   -o-border-radius: 500px;
   border-radius: 500px;
 }
-/* line 563, ../scss/responsive-styles/_xs.scss */
+/* line 566, ../scss/responsive-styles/_xs.scss */
 #back-top a:hover, #back-top a:focus {
   color: #000;
   opacity: 1;
 }
-/* line 569, ../scss/responsive-styles/_xs.scss */
+/* line 572, ../scss/responsive-styles/_xs.scss */
 #back-top i {
   width: 40px;
   height: 40px;
@@ -5587,9 +5589,10 @@ Here you can begin to add more resource-intensive styles.
     color: #fff;
     max-height: 35px;
     font-size: 22px;
+    tex-align: center;
   }
 
-  /* line 76, ../scss/responsive-styles/_sm.scss */
+  /* line 77, ../scss/responsive-styles/_sm.scss */
   #tel {
     color: #fff;
     font-size: 22px;
@@ -5599,7 +5602,7 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   MEALS
   *********************/
-  /* line 87, ../scss/responsive-styles/_sm.scss */
+  /* line 88, ../scss/responsive-styles/_sm.scss */
   #meals {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
     border-top: solid 6px #6e94c8;
@@ -5608,12 +5611,12 @@ Here you can begin to add more resource-intensive styles.
     padding-bottom: 50px;
   }
 
-  /* line 96, ../scss/responsive-styles/_sm.scss */
+  /* line 97, ../scss/responsive-styles/_sm.scss */
   #meal_circles {
     margin-top: -3em;
   }
 
-  /* line 104, ../scss/responsive-styles/_sm.scss */
+  /* line 105, ../scss/responsive-styles/_sm.scss */
   .circle_title {
     background: #0f64a9;
     color: #fff;
@@ -5629,14 +5632,14 @@ Here you can begin to add more resource-intensive styles.
     -webkit-transform: skew(-30deg);
   }
 
-  /* line 119, ../scss/responsive-styles/_sm.scss */
+  /* line 120, ../scss/responsive-styles/_sm.scss */
   .circle_title:hover {
     background: #0D3874;
     border: solid 4px #fff;
     color: #fff;
   }
 
-  /* line 125, ../scss/responsive-styles/_sm.scss */
+  /* line 126, ../scss/responsive-styles/_sm.scss */
   #circles_bg {
     background: #6e94c8;
     position: relative;
@@ -5651,7 +5654,7 @@ Here you can begin to add more resource-intensive styles.
     -webkit-transform: skew(-37deg);
   }
 
-  /* line 139, ../scss/responsive-styles/_sm.scss */
+  /* line 140, ../scss/responsive-styles/_sm.scss */
   #greek_border {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_border.jpg) repeat-x;
     height: 47px;
@@ -5660,21 +5663,21 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   SECTION 2
   *********************/
-  /* line 149, ../scss/responsive-styles/_sm.scss */
+  /* line 150, ../scss/responsive-styles/_sm.scss */
   #section2 {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/section2_bg_tile.jpg) repeat;
     color: #fff;
     padding: 2em 2em 3em;
   }
 
-  /* line 155, ../scss/responsive-styles/_sm.scss */
+  /* line 156, ../scss/responsive-styles/_sm.scss */
   #section2 h1 {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
     font-size: 30px;
   }
 
-  /* line 161, ../scss/responsive-styles/_sm.scss */
+  /* line 162, ../scss/responsive-styles/_sm.scss */
   #section2 h2 {
     color: #fff;
     font-family: 'gando_btregular';
@@ -5683,14 +5686,14 @@ Here you can begin to add more resource-intensive styles.
     text-align: left;
   }
 
-  /* line 169, ../scss/responsive-styles/_sm.scss */
+  /* line 170, ../scss/responsive-styles/_sm.scss */
   #section2 p {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
     font-size: 15px;
   }
 
-  /* line 175, ../scss/responsive-styles/_sm.scss */
+  /* line 176, ../scss/responsive-styles/_sm.scss */
   #welcome {
     padding-top: 30px;
   }
@@ -5698,47 +5701,47 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   SECTION 3
   *********************/
-  /* line 183, ../scss/responsive-styles/_sm.scss */
+  /* line 184, ../scss/responsive-styles/_sm.scss */
   #section3 {
     background: #7A9BC6;
     color: #fff;
     padding: 20px;
   }
 
-  /* line 189, ../scss/responsive-styles/_sm.scss */
+  /* line 190, ../scss/responsive-styles/_sm.scss */
   #section3 h1 {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
     font-size: 30px;
   }
 
-  /* line 195, ../scss/responsive-styles/_sm.scss */
+  /* line 196, ../scss/responsive-styles/_sm.scss */
   #section3 h2 {
     color: #fff;
     font-family: 'gando_btregular';
     font-size: 28px;
   }
 
-  /* line 201, ../scss/responsive-styles/_sm.scss */
+  /* line 202, ../scss/responsive-styles/_sm.scss */
   #section3 p {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
     font-size: 14px;
   }
 
-  /* line 207, ../scss/responsive-styles/_sm.scss */
+  /* line 208, ../scss/responsive-styles/_sm.scss */
   #section3 ul li {
     color: #fff;
     font-family: 'benguiat_bk_btbook';
     font-size: 16px;
   }
 
-  /* line 214, ../scss/responsive-styles/_sm.scss */
+  /* line 215, ../scss/responsive-styles/_sm.scss */
   #specials_list {
     padding-top: 2em;
   }
 
-  /* line 220, ../scss/responsive-styles/_sm.scss */
+  /* line 221, ../scss/responsive-styles/_sm.scss */
   #homepage_specials {
     padding-top: 1em;
   }
@@ -5746,7 +5749,7 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   MENUS
   *********************/
-  /* line 230, ../scss/responsive-styles/_sm.scss */
+  /* line 231, ../scss/responsive-styles/_sm.scss */
   #sunrisespecials, #pancakesorfrenchtoast, #morningextras {
     background: url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/circle_bg_tile.jpg) repeat;
     padding: 0 2em 2em;
@@ -5756,19 +5759,19 @@ Here you can begin to add more resource-intensive styles.
   /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 242, ../scss/responsive-styles/_sm.scss */
+  /* line 243, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 249, ../scss/responsive-styles/_sm.scss */
+  /* line 250, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 258, ../scss/responsive-styles/_sm.scss */
+  /* line 259, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5779,12 +5782,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 266, ../scss/responsive-styles/_sm.scss */
+  /* line 267, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 270, ../scss/responsive-styles/_sm.scss */
+  /* line 271, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }
@@ -5825,9 +5828,10 @@ DESKTOP
     color: #fff;
     max-height: 35px;
     font-size: 22px;
+    text-align: center;
   }
 
-  /* line 35, ../scss/responsive-styles/_md.scss */
+  /* line 36, ../scss/responsive-styles/_md.scss */
   #tel {
     color: #fff;
     font-size: 22px;
