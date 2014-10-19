@@ -1681,7 +1681,7 @@
   text-transform: uppercase;
   position: relative;
   letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 42px;
   margin: 0 30px;
   padding: 55px 0 0 0;
   height: 110px;
@@ -1692,11 +1692,11 @@
 }
 .ih-item.circle.effect13 .info p {
   visibility: hidden;
-  color: #bbb;
-  padding: 10px 5px;
+  color: #fff;
+  padding: 0px 5px;
   font-style: italic;
   margin: 0 30px;
-  font-size: 12px;
+  font-size: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;

@@ -85,9 +85,11 @@ BANNER
 *********************/
 
 .greek_am_badge {
-	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_american.png);
-	<position:relative;
+	position:relative;
 	float:left;
+	margin-left:15%;
+	margin-top:5em;
+	
 }
 
 
@@ -146,6 +148,7 @@ MEALS
     transform: skew(-37deg); 
     -webkit-transform: skew(-37deg);
 }
+
 
 #greek_border {
 	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/greek_border.jpg) repeat-x;

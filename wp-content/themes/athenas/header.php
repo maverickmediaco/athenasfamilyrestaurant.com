@@ -99,6 +99,7 @@
 		
 		<?php // Interior Header Image ?>
         <div class="banner-wrap">
+        	<div class="greek_am_badge"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/greek_american.png"></div>
             <div id="banner">
             
                 <div class="spacer"></div>
@@ -111,14 +112,14 @@
 <div id="meal_circles" class="row">
 			  <div class="col-sm-2"></div>
               <div id="circle_breakfast" class="col-sm-3">
-              <div class="circle_title">Breakfast</div>
+              <a href="/athenasfamilyrestaurant.com/menu/breakfast/"><div class="circle_title">Breakfast</div></a>
                 <!-- colored -->
                 <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
                     <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
                     <div class="info">
                       <div class="info-back">
-                        <h3>Breakfast</h3>
-                        <p>Description goes here</p>
+                        <h3>Breakfast Menu</h3>
+                        <p>Click to View</p>
                       </div>
                     </div></a></div>
                 <!-- end colored -->
@@ -126,29 +127,29 @@
               </div>
               
                      <div id="circle_lunch" class="col-sm-3">
-                     <div class="circle_title">Lunch</div>
+                     <a href="/athenasfamilyrestaurant.com/menu/lunch/"><div class="circle_title">Lunch</div></a>
                 <!-- colored -->
-                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
-                    <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/breakfast_circle.png" alt="breakfast"></div>
+                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/lunch/">
+                    <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/lunch_circle.png" alt="breakfast"></div>
                     <div class="info">
                       <div class="info-back">
-                        <h3>Breakfast</h3>
-                        <p>Description goes here</p>
+                        <h3>Lunch Menu</h3>
+                        <p>Click to View</p>
                       </div>
                     </div></a></div>
                 <!-- end colored -->
              
               </div>
               
-                     <div id="circle_dinner" class="col-sm-3">
-                     <div class="circle_title">Dinner</div>
+                    <div id="circle_dinner" class="col-sm-3">
+                      <a href="/athenasfamilyrestaurant.com/menu/dinner/"><div class="circle_title">Dinner</div></a>
                 <!-- colored -->
-                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/breakfast/">
+                <div class="ih-item circle colored effect13 from_left_and_right"><a href="/athenasfamilyrestaurant.com/menu/dinner/">
                     <div class="img"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/meal_circles/dinner_circle.png" alt="breakfast"></div>
                     <div class="info">
                       <div class="info-back">
-                        <h3>Breakfast</h3>
-                        <p>Description goes here</p>
+                        <h3>Dinner Menu</h3>
+                        <p>Click to View</p>
                       </div>
                     </div></a></div>
                 <!-- end colored -->
