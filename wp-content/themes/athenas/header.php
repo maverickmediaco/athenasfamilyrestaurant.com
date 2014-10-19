@@ -98,8 +98,17 @@
 <?php if ( is_front_page() ) { ?><!-- Homepage -->
 		
 		<?php // Interior Header Image ?>
+        <div class="container">
+        	<div id="greek_am_badge" class="row">
+            	<div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                <img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/greek_american1.png">
+        		</div>
+                
+            </div>
+         </div>       
         <div class="banner-wrap">
-        	<div class="greek_am_badge"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/greek_american.png"></div>
+        	
             <div id="banner">
             
                 <div class="spacer"></div>

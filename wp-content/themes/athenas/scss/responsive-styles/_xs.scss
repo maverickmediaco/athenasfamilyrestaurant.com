@@ -145,7 +145,8 @@ HEADER SYTLES
 #wpadminbar { min-height: 32px; }
 
 .header {}
-	#logo {}
+	#logo {position:relative;
+			z-index:999;}
 	#banner {
 
 	background:url(/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/headers/header1.jpg) no-repeat fixed !important;
@@ -153,6 +154,9 @@ HEADER SYTLES
 	background-position: top;
 	height: 500px;
 	font-weight: 300;
+	margin-top:-500px;
+	position:relative;
+	z-index:1;
 	
 
 		.spacer {
