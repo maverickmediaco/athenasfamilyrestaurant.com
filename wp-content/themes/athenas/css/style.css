@@ -5777,22 +5777,27 @@ Here you can begin to add more resource-intensive styles.
     border: solid 4px #0F64A9;
   }
 
+  /* line 251, ../scss/responsive-styles/_sm.scss */
+  .wprmm_menu ul li span.menu_price {
+    padding-top: 5px;
+  }
+
   /*********************
   STICKY FOOTER STYLES
   *********************/
-  /* line 257, ../scss/responsive-styles/_sm.scss */
+  /* line 260, ../scss/responsive-styles/_sm.scss */
   html,
   body.sticky-footer {
     height: 100%;
     margin: 0;
   }
 
-  /* line 264, ../scss/responsive-styles/_sm.scss */
+  /* line 267, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container {
     display: table;
     width: 100%;
   }
-  /* line 273, ../scss/responsive-styles/_sm.scss */
+  /* line 276, ../scss/responsive-styles/_sm.scss */
   body.sticky-footer #container .header,
   body.sticky-footer #main-navigation,
   body.sticky-footer #container .banner-wrap,
@@ -5803,12 +5808,12 @@ Here you can begin to add more resource-intensive styles.
     overflow: hidden;
   }
 
-  /* line 281, ../scss/responsive-styles/_sm.scss */
+  /* line 284, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #container {
     height: 100%;
   }
 
-  /* line 285, ../scss/responsive-styles/_sm.scss */
+  /* line 288, ../scss/responsive-styles/_sm.scss */
   html > body.sticky-footer #content {
     height: auto;
   }

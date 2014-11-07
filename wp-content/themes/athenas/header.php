@@ -45,6 +45,17 @@
 
 <link href="/athenasfamilyrestaurant.com/wp-content/themes/athenas/css/ihover.css" rel="stylesheet">
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="sss/sss.min.js"></script>
+<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+
+<script>
+jQuery(function($) {
+$('.slider').sss();
+});
+</script>
+
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -74,7 +85,7 @@
                  
                    	 	<div class="col-md-5">	
 							<?php // to use a image just replace the bloginfo('name') with <img> ?>
-							<div id="logo" class="h1"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/logo.png"></a>
+							<a href="/athenasfamilyrestaurant.com/"><div id="logo" class="h1"><img src="/athenasfamilyrestaurant.com/wp-content/themes/athenas/images/logo.png"></a>
                             <?php // if you'd like to use the site description you can un-comment it below
 				// echo '<p class="site-description">'. bloginfo( "description" ) .'</p>' ?>
                             </div>
