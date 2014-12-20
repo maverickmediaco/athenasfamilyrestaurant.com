@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '+TT=dx^|fBg3VvN+ph0Y[{$jr|C_/gSEuyIZ3?x$ZZNT{2.2BC]K!fR?2sIW^v_B');
-define('SECURE_AUTH_KEY',  '+%K0CR6pJc>|gKt/Q7:24]qA$@]pec^|HD^[G>^_S&*[-%j?X#6NY&^M~Wy(byh`');
-define('LOGGED_IN_KEY',    '#{zC/2kO(,;3Y(t-Iq7:`[0,H9+wqf}Qs6)5(.7.Y.:X{*+6TCr1kq*0n s1r]2>');
-define('NONCE_KEY',        '|-J{L25^CP$<w1|g|SD95;[a#h>/jY0di$nhJ|F1RAs4Spr,D1|#Ns;0Q7}RL@m-');
-define('AUTH_SALT',        'LoTUE<{mgQ9v.eMI|W+^E]#cD(&gtis-{)EOkB)2ZTGNY!bt[x9sB#sixQJbA68:');
-define('SECURE_AUTH_SALT', 'XK5>Jj1On9B R*3Ju.ru]XUe3A~-^linwQ`:^)al80~BfLoAtcNpYyN9|gdWNgXj');
-define('LOGGED_IN_SALT',   'AWS9-!1/;(52wv^;3(R|v!Q#p^SadN9mB)gYMaVf,!8Ic]R&CcPsQR#IzW>i=xw7');
-define('NONCE_SALT',       'fW3sg !Oy?<DwME1EaNrhP$SS^q-q/S&c-_5aG{_A_TLRQA|~G?0&7|VfPC`h6 <');
+define('AUTH_KEY',         'stX kVS@~`=-@B:AoPXuyTmm#o]8?ya>zuyveecTUN2i,|-bK|W|{|7.VTSM::J$');
+define('SECURE_AUTH_KEY',  'jbwe@*X^Uw QF0{}oAP|nt1$*(+NDg-=wy~^nS:~PZ!4GvMDhq72Q0 D_HOSH^T(');
+define('LOGGED_IN_KEY',    'uQp+AFa%bt~@NpYsXCD(G5m`DP-ja^%Pm+.b|]Jey]wog!j|fi`jE4nx><yrhL-7');
+define('NONCE_KEY',        'cbQuB5i3_|*qv3!Z1U,0MxWq{|xowV|IeVcdI.RNglvAK^8Zoox6#uRltnMbp`cv');
+define('AUTH_SALT',        'PyMt7]M r$O:/K)<r{-8jpSX2pAd(n91.6vHA+elFs-N7}w5Khb _Xqh-^SsW.Tr');
+define('SECURE_AUTH_SALT', '&7)=Y=!,KvW>R;cCSCvs-)%7-aUxeqT8<}^HWS:ACvl)i-ks8thy|D?|OX9<2i-W');
+define('LOGGED_IN_SALT',   'gGCI*6nmZAnv}^(WFEWu4I <%+XyU;%I iP =n7N4^``B^e J5=+;=?}3Zwsu6AX');
+define('NONCE_SALT',       'S$||*I[^|YsK2Wk|rIUqirN1X@o/UZ}?3E=%EBj?Y-.Y8--gd_,]aSM#7aOIE9)8');
 
 /**#@-*/
 
@@ -60,16 +60,6 @@ define('NONCE_SALT',       'fW3sg !Oy?<DwME1EaNrhP$SS^q-q/S&c-_5aG{_A_TLRQA|~G?0
  * prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress. A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
- * language support.
- */
-define('WPLANG', '');
 
 /**
  * For developers: WordPress debugging mode.
